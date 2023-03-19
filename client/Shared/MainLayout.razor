@@ -1,0 +1,22 @@
+﻿@inherits LayoutComponentBase
+
+<main class="relative h-screen overflow-hidden bg-gray-100 dark:bg-gray-800">
+    <div class="flex items-start justify-between">
+        <div class="relative hidden h-screen shadow-lg lg:block w-80">
+            <div class="h-full bg-white dark:bg-gray-700">
+                <div class="flex items-center justify-start pt-6 ml-8">
+                    <p class="text-xl font-bold dark:text-white">
+                        Medical Portal
+                    </p>
+                </div>
+                <NavMenu/>
+            </div>
+        </div>
+        <div class="flex flex-col w-full md:space-y-4">
+            <MainHeader/>
+            <div class="h-screen px-4 pb-24 overflow-auto md:px-6">
+                @Body
+            </div>
+        </div>
+    </div>
+</main>
